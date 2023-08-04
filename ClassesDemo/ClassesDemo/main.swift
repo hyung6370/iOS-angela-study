@@ -1,0 +1,13 @@
+
+let skeleton1 = Enemy(health: 100, attackStrength: 10)
+let skeleton2 = skeleton1
+
+skeleton1.takeDamage(amount: 10)
+
+print(skeleton2.health)
+
+skeleton1.takeDamage(amount: 10)
+skeleton2.takeDamage(amount: 10)
+
+print(skeleton1.health)
+print(skeleton2.health)
