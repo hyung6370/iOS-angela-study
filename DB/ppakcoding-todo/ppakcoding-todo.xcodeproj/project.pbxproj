@@ -41,6 +41,7 @@
 		BDFA18132AD3C111005A5450 /* FirebaseRemoteConfigSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BDFA18122AD3C111005A5450 /* FirebaseRemoteConfigSwift */; };
 		BDFA18152AD3C111005A5450 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = BDFA18142AD3C111005A5450 /* FirebaseStorage */; };
 		BDFA18172AD3C111005A5450 /* FirebaseStorageCombine-Community in Frameworks */ = {isa = PBXBuildFile; productRef = BDFA18162AD3C111005A5450 /* FirebaseStorageCombine-Community */; };
+		BDFA181C2AD53BBA005A5450 /* TodoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BDFA181B2AD53BBA005A5450 /* TodoCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -53,6 +54,7 @@
 		BDFA17D72AD3BBC8005A5450 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BDFA17D92AD3BBC8005A5450 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BDFA17DF2AD3BC83005A5450 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		BDFA181B2AD53BBA005A5450 /* TodoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +122,7 @@
 				BDFA17D62AD3BBC8005A5450 /* LaunchScreen.storyboard */,
 				BDFA17D92AD3BBC8005A5450 /* Info.plist */,
 				BDFA17DF2AD3BC83005A5450 /* GoogleService-Info.plist */,
+				BDFA181B2AD53BBA005A5450 /* TodoCell.swift */,
 			);
 			path = "ppakcoding-todo";
 			sourceTree = "<group>";
@@ -231,6 +234,7 @@
 				BDFA17D02AD3BBC6005A5450 /* ViewController.swift in Sources */,
 				BDFA17CC2AD3BBC6005A5450 /* AppDelegate.swift in Sources */,
 				BDFA17CE2AD3BBC6005A5450 /* SceneDelegate.swift in Sources */,
+				BDFA181C2AD53BBA005A5450 /* TodoCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
