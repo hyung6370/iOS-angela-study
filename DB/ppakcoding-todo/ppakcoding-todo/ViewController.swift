@@ -26,10 +26,22 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ref = Database.database(url: "https://ppakcoding-todo-ea73e-default-rtdb.asia-southeast1.firebasedatabase.app").reference()
+        ref = Database.database(url: "https://ppakcoding-todo-ea73e-default-rtdb.asia-southeast1.firebasedatabase.app").reference().child("todos")
         
         self.todoTableView.dataSource = self
         self.todoTableView.delegate = self
+        
+        
+//        ref?.observe(.value) { snapshot in
+//            for child in snapshot.children {
+//                
+//                let value = child.value as? NSDictionary
+//                let todo = value?["todo"] as? String ?? ""
+//                let isDone = value?["isDone"] as? Bool ?? false
+//                let fetchedTodoEntity = TodoEntity(todo: todo, isDone: isDone)
+//                print(#fileID, #function, #line, "- fetchedTodoEntity: \(fetchedTodoEntity)")
+//          }
+//        }
     }
     
 
