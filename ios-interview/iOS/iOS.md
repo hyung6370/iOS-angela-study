@@ -37,3 +37,9 @@ A)
 2. 앱 실행 도중 홈 버튼을 누른다: Active -> In-Active -> Background
 3. 앱을 다시 켠다: Background -> In-Active -> Active
 4. 앱이 백그라운드에 있다가 Suspended 상태로 전이: Active -> In-Active -> Background -> Suspended
+
+### Q) Scene Delegate에 대해 설명하시오.
+A) SceneDelegate는 UISceneSession의 scene 생성, 파괴 및 상태 복원과 같은 scene 라이프 사이클 이벤트를 담당한다.
+
+### Q) UIApplication 객체의 건트롤러 역할은 어디에 구현해야 하는가?
+A) UIApplication 객체는 `UIApplicationMain(_:_:_:_:)` 함수에서 Singleton 객체로 생성된다. 그리고 이 함수는 `@main`이 선언되어 있는 App Delegate에서 실행된다.
