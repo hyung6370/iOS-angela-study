@@ -43,3 +43,18 @@ A) SceneDelegate는 UISceneSession의 scene 생성, 파괴 및 상태 복원과 
 
 ### Q) UIApplication 객체의 건트롤러 역할은 어디에 구현해야 하는가?
 A) UIApplication 객체는 `UIApplicationMain(_:_:_:_:)` 함수에서 Singleton 객체로 생성된다. 그리고 이 함수는 `@main`이 선언되어 있는 App Delegate에서 실행된다.
+
+### Q) App의 Not Running, In-Active, Active, Background, Suspended에 대해 설명하시오.
+- Not Running : 앱이 실행되지 않았거나 시스템에서 종료된 상태
+- In-Active : Foreground의 한 상태로, 앱이 Foreground에서 실행 중이지만 이벤트를 받을 수 없는 상태, 그리고 다른 상태로 전이될 수 있는 상태
+- Active : 앱이 화면에 떠 있을 때의 상태, 그리고 이벤트를 받을 수 있는 상태
+- Background : 대부분의 앱이 일시중지인 상태, 그러나 추가 시간을 요청하는 앱은 일정기간 동안 이 상태로 남아 있을 수 있다
+- Suspended : 앱이 백그라운드에 있지만 코드를 실행하지 않고 있는 상태
+
+<br />
+<hr />
+
+### Q) iOS 앱을 만들고, User Interface를 구성하는 데 필수적인 프레임워크 이름은 무엇인가?
+ A) Cocoa Touch Framework와 UIKit이 있다.
+
+ 
