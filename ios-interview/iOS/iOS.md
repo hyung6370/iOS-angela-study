@@ -55,6 +55,16 @@ A) UIApplication 객체는 `UIApplicationMain(_:_:_:_:)` 함수에서 Singleton 
 <hr />
 
 ### Q) iOS 앱을 만들고, User Interface를 구성하는 데 필수적인 프레임워크 이름은 무엇인가?
- A) Cocoa Touch Framework와 UIKit이 있다.
+A) Cocoa Touch Framework와 UIKit이 있다.
 
- 
+### Q) Foundation Kit은 무엇이고, 포함되어 있는 클래스들은 어떤 것이 있는지 설명하시오.
+A) Foundation Kit은 Cocoa Touch Framework에 포함되어 있는 프레임워크 중 하나로 String, Int 등의 원시 데이터 타입과 컬렉션 타입 및 운영체제 서비스를 사용해 앱의 기능을 관리하는 프레임워크 이다. 그리고 Iterator, jsonEncoder, jsonDecoder와 같은 데이터 관련 클래스가 정의되어 있다.
+
+### Q) Delegate란 무엇인지 설명하고, retain이 되는지 안되는지 그 이유를 함께 설명하시오.
+- Delegate란 하나의 객체가 모든 일을 처리하는 것이 아니라 처리해야 할 일 중 일부를 다른 객체에게 위임하는 것이다. 객체의 행동을 단순화시기고,객체의 결합성을 최소화하는 장점이 있다.
+- Retain은 메모리가 해제되지 않고 유지되어 누수가 생기는 현상을 말한다. 두 객체간의 참조가 강한 순환참조가 생겨 메모리에서 해제되지 않는 현상이다.
+
+A) Retain은 객체가 메모리에서 해제되지 않도록 호출되어 레퍼런스 카운트를 증가시키는데, Delegate는 객체끼리의 참조값을 사용하기 때문에 retain이 된다고 할 수 있다.
+
+### Q) NotificationCenter 동작 방식과 활용 방안에 대해 설명하시오.
+A) Notification이란 Observer(관찰자)에게 정보를 전달해주는 알림 발송 메커니즘이다. 그리고 이 Notification 센터는 앱 내에서 공식적인 연결이 없는 두 개 이상의 컴포넌트들이 상호작용이 필요할 때, 상호작용이 반복적으로 그리고 지속적으로 이루어져야 할 때, 일대다 또는 다대다 통신을 사용하는 경우 활용할 수 있다.
